@@ -6,8 +6,12 @@
     */
 
     //Entrada
+    const temp = Number(prompt(`Informe a temperatura em graus Fahrenheit:`).trim());
+    function Celsius() {
+        alert(`Esta é a temperaura convertida para graus celsius: ${((temp - 32) * 5 / 9 ).toFixed(2).replace(",", ".")}`)
+    }
 
-
+    Celsius();
     //Processamento
 
 
