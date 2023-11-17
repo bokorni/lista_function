@@ -8,7 +8,18 @@
 
     //Entrada
    const word = prompt(`Informe uma palavra:`.trim());
-
+       //Processamento
+       function vogal(word) {
+        let letras  = [];
+        for (let i = 0; i < word.length; i++) {
+          const ltr = word[i]
+          if('AEIOU'.includes(ltr)){
+            vogais.push(ltr)
+          }        
+        }
+        alert(`Esta palavra tem ${letras.length} vogais`)
+    }
+    vogal(word)
 
     //Processamento
 

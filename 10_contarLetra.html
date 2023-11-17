@@ -6,11 +6,22 @@
     */
 
     //Entrada
-
+    const frase = prompt('Insira uma frase').trim();
+    const letra = prompt('Insira uma letra').trim();
 
     //Processamento
+    function search (frase, letra) {
+        let letras = []
+        for (let i = 0; i < frase.length; i++) {
+            const find = frase[i]
+            if (find.includes(letra)) {
+                letras.push(find)
+            }
+        }
+        alert(`A letra ${letra} aparece ${letras.length} vezes nesta frase.`.trim());
+    }
 
-
+    search(frase, letra);
     //Saída
 
 </script>
